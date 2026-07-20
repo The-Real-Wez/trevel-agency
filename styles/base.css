@@ -301,9 +301,7 @@ footer {
 @media(max-width: 860px) {
   .hamburger {
     display: flex;
-  }
-
-  .nav-links {
+  }.nav-links {
     position: absolute;
     top: 100%;
     left: 0;
