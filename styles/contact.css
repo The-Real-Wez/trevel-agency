@@ -1,0 +1,36 @@
+.page-banner .glow-blob{
+  width:360px;
+  height:360px;
+  top:-160px;
+  left:50%;
+  transform :translateX(-50%);
+}
+.contact-info-grid{
+  flex-wrap:wrap;
+  gap:24px;
+  margin:30px;
+}
+.info-card{
+  flex:1 1calc(25%-24px);
+  min-width:220px;
+  background-color :var(--bg color);
+  border:1px solid var(--border-color );
+  border-radius:var(--radius);
+  padding:30px 24px;
+  text-align: center;
+  transition: all  0.3s ease;
+}
+.info-card:hover{
+  transform:translateY(-6px);
+  border-color:var(--accent);
+  box-shadow:0 0 22px var(--accent-glow);
+}
+.info-icon{
+  width:56px;
+  height:56px;
+  margin:0 auto 18px auto;
+  border-radius:50%;
+  background-color:var(--accent-soft);
+  border:1px solid var(--accent);
+  display:flex;
+}
