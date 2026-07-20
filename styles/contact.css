@@ -129,4 +129,31 @@ margin-bottom:8px;
      .sidebar-card h4 {
        margin-bottom:16px;
      }
+     .hours-rows{
+       display:flex;
+       justify-content:space-between ;
+       padding:10px 0;
+       border-bottom:1px solid var(--border-color);
+       font-size:0.89rem;
+       color:var(--text-muted);
+     }
+     .hours-row:last-child {
+       border-bottom:none;
+     }
+     .hours-row span:last-child {
+       color:var(--text-light);
+     }
+     .map-placeholder {
+       height:180px;
+       border:1px dashed var(--border-color);
+       border-radius:var(--radius);
+       display:flex;
+       align-items:center;
+       justify-content:center;
+       color:var(--text-muted);
+       font-size:0.85rem;
+       text-align:center;
+       background-color:var(--bg-darker);
+     }
+     
      
