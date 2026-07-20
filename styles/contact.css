@@ -102,3 +102,31 @@ margin-bottom:8px;
        resize:vertical;
        min-height: 140px;
      }
+     .form-group input:focus,
+     .form-group select:focus,
+     .form-group textarea:focus{
+       outline:none;
+       border-color:var(--accent);
+       box-shadow:0 0 14px var(--accent-glow);
+     }
+     .form-group input::placeholder,
+     .form-input textarea::placeholder {
+       color:#5f7488;
+     }
+     .contact-sidebar{
+       flex:1 1 32%;
+       min-width: 260px;
+       display: flex;
+       flex-direction:column;
+       gap:24px;
+     }
+     .sidebar-card {
+       background-color:var(--bg-card);
+       border:1px solid var(--border-color);
+       border-radius:var(--radius);
+       padding:28px;
+     }
+     .sidebar-card h4 {
+       margin-bottom:16px;
+     }
+     
