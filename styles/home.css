@@ -117,7 +117,146 @@
 .feature-item h4{
   margin-bottom: 8px;
 }
-.feature-item p {
+.feature-item p{
   color: var(--text-muted);
   font-size: 0.9rem;
+}
+
+.dest-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.dest-card {
+  flex: 1 1 calc(25% - 24px);
+  min-width: 240px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.dest-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent);
+  box-shadow: 0 0 24px var(--accent-glow);
+}
+
+.dest-img {
+  height: 170px;
+  width: 100%;
+  background-color: var(--bg-darker);
+  overflow: hidden;
+}
+
+.dest-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.dest-card:hover .dest-img img {
+  transform: scale(1.08);
+}
+
+.dest-info {
+  padding: 20px;
+}
+
+.dest-info h4 {
+  margin-bottom: 6px;
+}
+
+.dest-info .price {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  display: block;
+}
+
+.view-all-wrap {
+  text-align: center;
+  margin-top: 44px;
+}
+
+/* ---------- Testimonials ---------- */
+.review-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.review-card {
+  flex: 1 1 calc(33.333% - 24px);
+  min-width: 260px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);border-radius: var(--radius);
+  padding: 28px;
+  transition: all 0.3s ease;
+}
+
+.review-card:hover {
+  border-color: var(--accent);box-shadow: 0 0 20px var(--accent-glow);
+  transform: translateY(-4px);
+}
+.stars{
+  color: var(--accent);
+  margin-bottom: 14px;
+  letter-spacing: 2px;
+}
+
+.review-card p.quote{
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  margin-bottom: 22px;
+  font-style: italic;
+}
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.avatar-initial {width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--accent-soft);
+  border: 1px solid var(--accent);color: var(--accent);
+  display: flex;align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+
+.reviewer h5{
+  font-size: 0.95rem;
+  margin-bottom: 2px;
+}
+
+.reviewer span{
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.cta-banner{
+  text-align: center;
+  background-color: var(--bg-card); border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 60px 30px;
+  box-shadow: 0 0 30px var(--accent-glow);
+}
+
+.cta-banner h2{
+  font-size:2rem;
+  margin-bottom: 14px;
+}
+
+.cta-banner p{
+  color: var(--text-muted);
+  margin-bottom: 28px;
 }
